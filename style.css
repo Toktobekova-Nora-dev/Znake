@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  background-color: rgb(37, 69, 97);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: antiquewhite;
+}
+.game-detail {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-board {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(127, 145, 134);
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+  background-color: red;
+}
+
+.play-board .head {
+  background-color: rgb(0, 162, 255);
+}
+
+.controls {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.controls ion-icon {
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: rgb(37, 69, 97);
+  font-weight: bold;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls ion-icon:hover {
+  background-color: #d8ded9;
+}
+
+input {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #4caf50; /* Зеленая рамка */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #388e3c; /* Темно-зеленый при фокусе */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50; /* Зеленая кнопка */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-left: 10px;
+}
